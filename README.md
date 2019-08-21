@@ -1,1 +1,1 @@
-# CSS-Showcase-App
+# Projects Showcase App (for TheMarkArmendariz.com)

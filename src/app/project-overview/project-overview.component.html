@@ -1,0 +1,17 @@
+
+
+<div class="project-container">
+  <section class="project-overview" appProjectBackground [appProjectId]="projectId">
+  </section>
+
+  <div class="project-info-text" appProjectBackground [appProjectId]="projectId">
+    <h3 class="project-title"><a [routerLink]="['/project', projectId]">{{projectName}}</a></h3>
+    <!--<h3 class="project-title">{{projectName}}</h3>-->
+    <hr/>
+    <p class="project-desc">{{projectDesc}}</p>
+    <!--<a *ngIf="isWebsite" class="project-url">{{projectUrl}}</a>-->
+    <!--<ul><li *ngFor="let detail of detailPoints">{{detail}}</li></ul>-->
+  </div>
+
+ </div>
+    

@@ -1,0 +1,51 @@
+  <article *ngIf="project">
+
+    <section>
+      <h3 id="projectName">{{project.name}}</h3>
+      <p class="time">
+        <span>{{project.startDate}} - </span>
+        <span *ngIf="project.endDate">{{project.endDate}}</span>
+        <span *ngIf="!project.endDate">Present</span>
+      </p>
+    </section>
+
+    <section>
+      <p class="description">{{project.desc}}</p>
+    </section>
+
+    <div id="gridDiv">
+      <section *ngIf="project.isWebsite">
+        <h4 class="sectionTitle">Hosted</h4>
+        <p class="url"><a href="{{project.url}}">{{project.url}}</a></p>
+      </section>
+
+      <section *ngIf="project.detailPoints.length">
+        <h4 class="sectionTitle">Details</h4>
+        <ul>
+          <li *ngFor="let detail of project.detailPoints">{{detail}}</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4 class="sectionTitle">Technologies</h4>
+        <ul *ngIf="project.technologies">
+          <li *ngFor="let techName of project.technologies">{{techName}}</li>
+        </ul>
+      </section>
+
+      <section *ngIf="project.sourceControlUrl.length > 0">
+        <h4 class="sectionTitle">Source Control</h4>
+        <p><a href="{{project.sourceControlUrl}}">Github</a></p>
+      </section>
+      
+    </div>  
+
+    <section *ngIf="project.images.length > 0">
+      <figure *ngFor="let img of project.images">
+        <img src={{img.path}}>
+        <figcaption>{{img.caption}}</figcaption>
+      </figure>
+    </section>
+
+  </article>
+

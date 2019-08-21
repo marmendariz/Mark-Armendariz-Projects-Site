@@ -1,0 +1,16 @@
+
+<main>
+  <header>
+  <h3>Tap each section for more details</h3> 
+  </header>
+
+  <section *ngFor="let project of projects">
+    <project-overview [projectId]   ="project.id"
+                      [projectName] ="project.name"
+                      [projectDesc] ="project.shortDesc"
+                      [isWebsite]   ="project.isWebsite"
+                      [projectUrl]  ="project.url"
+                      [detailPoints]="project.detailPoints">
+    </project-overview>
+  </section>
+</main>
