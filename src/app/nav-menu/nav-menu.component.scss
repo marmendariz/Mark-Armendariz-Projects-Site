@@ -1,0 +1,79 @@
+
+li .glyphicon {
+    margin-right: 10px;
+}
+
+.icon-bar{
+    background-color: black !important;
+}
+
+button{
+    z-index: 10;
+}
+
+@media (max-width:767px) {
+    .navbar-header {
+      display:flex;
+    }
+  }
+
+
+  @media (max-width:767px) {
+    .navbar-toggle {
+      order:0;
+      margin-left:15px;
+      margin-right:0;
+    }
+  }
+
+
+.navbar-brand{
+    font-size: 20pt;
+    font-weight: bold;
+    word-break: break-all;
+    top: -8px;
+    position: relative;
+    width: 224px;
+}
+@media (max-width: 769px){
+    .navbar-brand{
+        position: static;
+        top: initial;
+        width: initial;
+    }
+}
+@media (max-width: 768px){
+    .navbar-brand{
+        width: 100%;
+        position: absolute;
+        order: 1;
+    }
+}
+
+@media (min-width: 769px){
+    #lineTwo{
+        bottom: -5px;
+        left: 14px;
+        position: absolute;
+    }
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+a{
+    color: black !important;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    a{
+        text-align: center !important;
+    }
+}
