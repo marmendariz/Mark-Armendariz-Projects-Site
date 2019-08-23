@@ -3,6 +3,12 @@ main{
   position: relative;
   top:50px;
 }
+@media (min-width: 768px){
+  #gridDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 header h3{
   text-align: center;
