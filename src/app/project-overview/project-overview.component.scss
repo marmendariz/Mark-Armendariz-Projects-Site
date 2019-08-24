@@ -26,38 +26,21 @@
       width: 90%;
     }
 
-  .project-title {
-    font-weight: bold;
-    margin: 0px;
-    font-size: 14pt;
-    line-height: 30px;
-    @media (min-width: 320px){
-      font-size: 16pt;
-    }
-    @media (min-width: 800px){
-      font-size: 18pt;
-    }
-  }
-  .project-title a {
-    color: white;
-  }
-
-  .project-desc{
-    font-size: 12pt;
-    @media (min-width: 320px){
-      font-size : 10pt;
-    }
-  }
-
-
-    @media (mid-width: 320px) {
-      font-size: 4pt;
-    }
-
-    li {
+    .project-title {
       font-weight: bold;
+      margin: 0px;
+      line-height: 30px;
+      font-size: 16pt;
+      overflow-wrap: break-word;
+    }
+    .project-title a {
+      color: white;
+    }
+
+    .project-desc{
+      font-size: 14pt;
     }
   }
-
 }
+
 

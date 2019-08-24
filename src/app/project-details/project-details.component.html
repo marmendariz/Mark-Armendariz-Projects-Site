@@ -40,7 +40,7 @@
       
     </div>  
 
-    <section *ngIf="project.images.length > 0">
+    <section id="imagesSection" *ngIf="project.images.length > 0">
       <figure *ngFor="let img of project.images">
         <img src={{img.path}}>
         <figcaption>{{img.caption}}</figcaption>
