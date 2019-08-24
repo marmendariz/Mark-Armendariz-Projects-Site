@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("color-thief");
-/**
- * Color Wheel defined for
- * */
+
 var ColorWheel = /** @class */ (function () {
     function ColorWheel() {
         this.colorWheel = [
@@ -21,4 +18,3 @@ var ColorWheel = /** @class */ (function () {
     return ColorWheel;
 }());
 exports.ColorWheel = ColorWheel;
-//# sourceMappingURL=color-wheel.js.map

@@ -1,8 +1,4 @@
-import 'color-thief';
 
-/**
- * Color Wheel defined for 
- * */
 export class ColorWheel{
 
   colorWheel: string[];

@@ -7,18 +7,11 @@ import {
   HostListener
 } from '@angular/core';
 import { ColorWheel } from './color-wheel';
-import 'color-thief';
-
-//https://blog.angulartraining.com/tutorial-how-to-create-your-own-angular-directive-3532d7f31fab
 
 @Directive({
   selector: '[appProjectBackground]'
 })
 
-
-/**
- *
- */
 export class ProjectBackgroundDirective implements OnChanges {
 
   private el: ElementRef;
