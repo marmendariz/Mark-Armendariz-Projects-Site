@@ -1,1 +1,1 @@
-# Projects Showcase App (for TheMarkArmendariz.com)
+# Projects App For TheMarkArmendariz.com
